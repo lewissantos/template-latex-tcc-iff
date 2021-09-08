@@ -14,7 +14,7 @@ Para a utilizar este template você pode simplesmente clonar este repositório o
 
 
 # Dúvidas com o LaTeX?
-* [Introdução ao LaTeX](https://drive.google.com/file/d/1CBXyh8bag81rBS-MUhBj6JJAElvgHJmU/view?usp=sharing) - Apresentação.
+* [Introdução ao LaTeX](https://drive.google.com/file/d/1m7DcbUvBWUKaLE6zsIWKD1l41epRvayS/view?usp=sharing) - Apresentação.
 
 * [Livro Gratuito](https://www.bookyards.com/en/member/page/ivolopez) - Site que disponibiliza um livro gratuito em português sobre o LaTeX.
 
