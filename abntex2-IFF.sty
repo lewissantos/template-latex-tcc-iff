@@ -230,7 +230,10 @@
 % --------------------- REDEFINIÇÃO DO AMBIENTE ABSTRACT (RESUMO) --------------------------
 % ==========================================================================================
 % Elemento obrigatório
-\renewenvironment{abstract}{\begin{flushleft}{\large\textbf{\abstractname}}\\\vspace{.7cm}}{\end{flushleft}}%
+% Elemento obrigatório
+\renewenvironment{abstract}{\setlength{\parindent}{0pt}\large{\textbf{\abstractname}}
+
+\vspace{.7cm}}%
 
 % fim das customizações
 \endinput
