@@ -29,7 +29,7 @@
 % ==========================================================================================
 
 % Provides the compiler information about this style
-\ProvidesPackage{abntex2-IFF}[2021/04/06 v.0.01 IFF LaTeX Custom Style]
+\ProvidesPackage{abntex2-IFF}[2024/02/04 v.0.1 IFF LaTeX Custom Style]
 \RequirePackage{xpatch}
 
 % Patch pra deixar seções em caixa alta no sumário
@@ -230,10 +230,30 @@
 % --------------------- REDEFINIÇÃO DO AMBIENTE ABSTRACT (RESUMO) --------------------------
 % ==========================================================================================
 % Elemento obrigatório
-% Elemento obrigatório
 \renewenvironment{abstract}{\setlength{\parindent}{0pt}\large{\textbf{\abstractname}}
 
 \vspace{.7cm}}%
+
+% ==========================================================================================
+% --------------------- ADIÇÃO DO AMBIENTE QUADRO --------------------------
+% Fonte: https://github.com/abntex/abntex2/wiki/HowToCriarNovoAmbienteListing
+% ==========================================================================================
+% Ambiente e lista de quadros
+\newcommand{\quadroname}{Quadro}
+\newcommand{\listofquadrosname}{LISTA DE QUADROS}
+
+\newfloat[chapter]{quadro}{loq}{\quadroname}
+\newlistof{listofquadros}{loq}{\listofquadrosname}
+\newlistentry{quadro}{loq}{0}
+
+% Regras da ABNT
+\setfloatadjustment{quadro}{\centering}
+\counterwithout{quadro}{chapter}
+\renewcommand{\cftquadroname}{\quadroname\space} 
+\renewcommand*{\cftquadroaftersnum}{\hfill--\hfill}
+
+% Posicionamento padrão:
+\setfloatlocations{quadro}{hbtp}
 
 % fim das customizações
 \endinput

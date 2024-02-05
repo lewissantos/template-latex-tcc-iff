@@ -40,7 +40,7 @@
 \titulo{Template para Trabalhos de Conclusão de Curso do Bacharelado em Sistemas de Informação do IFF}
 \autor{Nome do discente} % Se houver mais de um autor, então adicionar uma quebra de linha (\\) após o primeiro nome 
 \local{Itaperuna/RJ}
-\data{2021}
+\data{2024}
 
 % ==========================================================================================
 % ---------------------------- INFORMAÇÕES DA FOLHA DE ROSTO -------------------------------
@@ -134,6 +134,11 @@
 	\listoffigures
 	\cleardoublepage
 	
+	%---------------------- LISTA DE QUADROS (opcional) -- 	
+	\pdfbookmark[0]{\listofquadrosname}{loq}
+	\listofquadros
+	\cleardoublepage	
+	
 	%---------------------- LISTA DE TABELAS (opcional) -- Colocar somente se houver um número > 5 elementos
 	\renewcommand\listtablename{LISTA DE TABELAS}	
 	%\pdfbookmark[0]{\listtablename}{lot}
@@ -211,7 +216,12 @@
 		\legend{Fonte: \url{https://en.wikipedia.org/wiki/LaTeX}}
 	\end{figure}	
 
-	\chapter{Tabelas}\label{sec:tabelas}
+	\chapter{Tabelas e quadros}\label{sec:tabelas}
+	
+    Existem diferenças entre tabelas e quadros, as principais estão na formatação e natureza do conteúdo. A tabela deve ser utilizada de forma majoritária quando os dados forem numéricos, em contrapartida, o quadro é geralmente utilizado quando temos dados não numéricos.
+
+Um quadro é composto por linhas verticais e horizontais, sendo, portanto \enquote{fechado}. Já as tabelas possuem apenas linhas horizontais, sendo, desta forma \enquote{abertas}. Abaixo encontram-se exemplos de uso de tabelas e quadros.
+	
 	
 	\begin{table}[!htb]
 		\centering
@@ -265,6 +275,31 @@
 			\end{tabular}			
 		}{\fonte{Tiobe Index - \textcite{tiobeindex}}}
 	\end{table}
+	\newpage
+	
+No \autoref{quad:quad-bigO} é apresentada a análise de pior caso das complexidades de tempo das principais operações em algumas estruturas de dados.
+	
+	\begin{quadro}
+		\caption{Complexidades de tempo em algumas estruturas de dados}
+		\label{quad:quad-bigO}
+		\begin{tabular}{|l|l|l|l|l|}
+			\cline{1-5}
+			\textbf{Estrutura de dados}                         & \multicolumn{4}{l|}{\textbf{Complexidade de tempo (Pior caso)}}\\ \cline{1-5}
+			& \textbf{Acesso} & \textbf{Busca} & \textbf{Inserção} & \textbf{Remoção} \\ \cline{1-5}
+			Array              & O(1)            & O(n)           & O(n)              & O(n)             \\ \cline{1-5}
+			Stack              & O(n)            & O(n)           & O(1)              & O(1)             \\ \cline{1-5}
+			Queue              & O(n)            & O(n)           & O(1)              & O(1)             \\ \cline{1-5}
+			Singly-Linked List & O(n)            & O(n)           & O(1)              & O(1)             \\ \cline{1-5}
+			Doubly-Linked List & O(n)            & O(n)           & O(1)              & O(1)             \\ \cline{1-5}
+			Hash Table         & N/A             & O(n)           & O(n)              & O(n)             \\ \cline{1-5}
+			Binary Search Tree & O(n)            & O(n)           & O(n)              & O(n)             \\ \cline{1-5}
+			B-Tree             & O(log(n))       & O(log(n))      & O(log(n))         & O(log(n))        \\ \cline{1-5}
+			Red-Black Tree     & O(log(n))       & O(log(n))      & O(log(n))         & O(log(n))        \\ \cline{1-5}
+			AVL Tree           & O(log(n))       & O(log(n))      & O(log(n))         & O(log(n)) \\       \cline{1-5}
+		\end{tabular}
+		\fonte{BigO Cheatsheet - \url{https://www.bigocheatsheet.com/}}		
+	\end{quadro}
+
 
 	\chapter{Algoritmos}\label{sec:algoritmos}
 	\section{Busca Binária}
@@ -300,7 +335,7 @@
 
 	Em \textcite{laaksonen2017}, o autor traz uma excelente abordagem do algoritmo da \textsf{busca binária} e propõe um outro método de implementação. Também em \cite{programizsite} é realizada uma boa abordagem do algoritmo em suas versões iterativa e recursiva.
 	
-	\chapter{Material de Apoio}\label{sec:materia-apoio}
+	\chapter{Material de Apoio}\label{sec:material-apoio}
 	Abaixo seguem algumas referências para se trabalhar com a classe \textsf{abn\TeX 2} (Da qual este template foi extendido) e da classe \textsf{memoir}, na qual o \textsf{abn\TeX 2} foi baseado. Também são mostradas referências para o pacote \textsf{biblatex-abnt}, no qual foi utilizado para gerenciar as referências deste template e que possui suporte para as regras de citação exigidas pela ABNT. 
 	
 	\begin{alineas}
