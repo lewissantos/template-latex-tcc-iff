@@ -14,9 +14,9 @@ Para a utilizar este template você pode simplesmente clonar este repositório o
 
 
 # Dúvidas com o LaTeX?
-* [Introdução ao LaTeX](ttps://drive.google.com/file/d/1TcXXP-e4wDQ5xRj4YRksMZdgwGQMM373/view?usp=sharing) - Apresentação.
+* [Introdução ao LaTeX](https://drive.google.com/file/d/1TcXXP-e4wDQ5xRj4YRksMZdgwGQMM373/view?usp=sharing) - Apresentação.
 
-* [Livro Gratuito]([https://www.bookyards.com/en/member/page/ivolopez](https://books.google.com.br/books?id=f2BelqrXOIUC&pg=PA1&source=gbs_toc_r#v=onepage&q&f=false)) - Site que disponibiliza um livro gratuito em português sobre o LaTeX.
+* [Livro Gratuito](https://books.google.com.br/books?id=f2BelqrXOIUC&pg=PA1&source=gbs_toc_r#v=onepage&q&f=false) - Site que disponibiliza um livro gratuito em português sobre o LaTeX.
 
 * [StackExchange](https://tex.stackexchange.com/) - Fórum com comunidade ativa onde é possível tirar dúvidas e também contribuir respondendo a dúvidas de outros usuários.
 
